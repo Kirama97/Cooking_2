@@ -3787,6 +3787,18 @@ footer .licence {
 }
 
 
+.industry_bande {
+  
+    padding: 30px;
+    margin-bottom: 40px;
+    
+}
+.industry_bande h1 {
+  font-size: 20px;
+    
+
+}
+
 
 
 
@@ -4865,11 +4877,21 @@ overflow: hidden
 .delicious_content .row .item {
     width: 100%;
     padding: 0;
+    margin-bottom: 10px;
 }
 
 
 .delicious_texte p {
     font-size: 12px;
+}
+
+
+
+
+.delicious_content .item:hover .recipe_description::after{
+    height: 80%;
+
+
 }
 
 
@@ -5158,6 +5180,25 @@ footer .licence {
   
 }
 
+
+
+.industry_bande {
+  
+    padding: 30px;
+    margin-bottom: 40px;
+    
+}
+.industry_bande h1 {
+  font-size: 16px;
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 3; 
+overflow: hidden
+ 
+  
+    
+
+}
 
 
 

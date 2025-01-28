@@ -93,6 +93,12 @@ header {
 
 .logo {
     font-family: "Lobster", serif;
+    cursor: pointer;
+    font-size: 35px;
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    margin: 0;
 }
 
 .logo span {
@@ -145,14 +151,22 @@ nav:hover> :not(:hover) {
     gap: 25px;
 }
 
+
+
 .reseaux svg:nth-child(1)  {
     width: 12px;
 }
+
 
 .reseaux svg {
     width: 20px;
     fill: black;
     cursor: pointer;
+}
+.reseaux svg:hover {
+   
+    fill: var(--hover);
+    
 }
 
 /* main */

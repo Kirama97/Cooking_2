@@ -112,7 +112,8 @@ header {
 
 nav {
     display: flex;
-    gap: 30px;
+    gap: 35px;
+    transition: 0.5s ease;
     
 
 }
@@ -127,7 +128,16 @@ nav a {
 
 nav a:hover {
     color: rgb(0, 174, 255);
+
 }
+nav:hover> :not(:hover) {
+    /* filter: blur(2px); */
+    opacity: 0.5;
+    transition: 0.5s ease-in-out;
+
+}
+
+
 
 .reseaux{
     display: flex;
@@ -384,8 +394,25 @@ section {
     color: black;
     background-color:var(--blue);
     cursor: pointer;
+    
 
 
+
+}
+
+button:hover {
+    background-color: var(--hover);
+    color: rgb(73, 61, 61);
+    transition: 0.5s ease-out;
+   
+}
+
+.categorie_title .view_all:hover{
+    background-color: var(--hover);
+    color: rgb(73, 61, 61);
+    transition: 0.5s ease-out;
+   
+    
 
 }
 
@@ -398,8 +425,10 @@ section {
    display: grid;
    grid-template-columns: repeat(auto-fit ,minmax(150px , 1fr));
    gap: 80px;
+
     
 }
+
 
 .categorie .cat {
     
@@ -442,6 +471,11 @@ section {
   transform: scale(1.2);
 }
 
+.categorie_img:hover > :not(:hover) {
+    opacity: 0.5;
+    filter: blur(2px);
+    transition: 0.5s ease;
+}
 
 
 .categorie_img .cat:nth-child(1){
@@ -530,9 +564,18 @@ section {
 
 }
 
+.recipe_content:hover > :not(:hover) {
+
+    opacity: 0.5;
+    filter: blur(2px);
+    transition: 0.5s ease;
+
+}
+
 .recipe_item:hover  {
     background:linear-gradient(to bottom ,rgb(255, 255, 255),rgba(201, 216, 223, 0.466));
 }
+
 
 .recipe_img {
     /* background-color: aqua; */
@@ -1258,7 +1301,17 @@ section {
     height: 105%;
 
 
+
 }
+.delicious_content .row:hover > :not(:hover) {
+
+    
+    opacity: 0.5;
+    filter: blur(2px);
+    transition: 0.5s ease;
+}
+
+
 .delicious_content .item:hover .coeur{
         transform: scale(1.1);
         animation: coeur 1s ease-in-out;
@@ -1365,7 +1418,7 @@ section {
     color: var(--p-color);
 }
 
-.inbox .formulaire {
+ .formulaire {
     margin: 50px 0;
     padding: 20px;
     /* background-color: aqua; */
@@ -1375,7 +1428,7 @@ section {
     justify-content: center;
 }
 
-.inbox .formulaire_bloc {
+ .formulaire_bloc {
     background-color:white;
     padding: 0 10px ;
     height: 8vh;
@@ -2335,17 +2388,131 @@ color: var(--p-color);
 
 
 
+/* -----------page bloc et article-------------------------- */
+
+
+.article_titre {
+    margin-top: 100px;
+
+    text-align: center;
+}
 
 
 
 
+.article h1 {
+    font-size: 40px;
+    font-weight: 800;
+
+}
+.article p{
+    margin: 20px;
+    color: var(--p-color);
+}
+
+
+.article_titre .formulaire_bloc {
+    border: 1px solid var(--border);
+}
 
 
 
 
+/* section article  */
 
 
+.article .ingredient {
+    margin: 0;
+    
+}
+.bloc_article {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
+.bloc_article_item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right:80px;
+    
+}
+
+
+.bloc_article_left {
+    width:30%;
+    height: 20vh;
+    overflow: hidden;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.bloc_article_item:nth-child(1) .bloc_article_left{
+    background: url(/Resources/image/image\ 47.png);
+}
+.bloc_article_item:nth-child(2) .bloc_article_left{
+    background: url(/Resources/image/image\ 48.png);
+}
+.bloc_article_item:nth-child(3) .bloc_article_left{
+    background: url(/Resources/image/image\ 49.png);
+}
+.bloc_article_item:nth-child(4) .bloc_article_left{
+    background: url(/Resources/image/image\ 50.png);
+}
+.bloc_article_item:nth-child(5) .bloc_article_left{
+    background: url(/Resources/image/image\ 51.png);
+}
+.bloc_article_item:nth-child(6) .bloc_article_left{
+    background: url(/Resources/image/image\ 52.png);
+}
+
+.bloc_article_right {
+    padding: 20px 0;
+}
+
+.bloc_article_right h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+.bloc_article_right p {
+    color: var(--p-color);
+    margin: 20px 0;
+}
+
+
+.profil_article_right {
+    display: flex;
+    align-items: center;
+
+} 
+
+.profil_article_right .a_profil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 20px;
+    border-right: 1px solid var(--border);
+}
+
+.a_profil img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.a_profil h4 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.profil_article_right .a_date {
+    font-size: 12px;
+    color: var(--p-color);
+    padding-left: 20px;
+}
 
 
 
@@ -3490,14 +3657,13 @@ overflow: hidden
 .inbox .inbox_texte p {
    font-size: 14px;
 }
-
-.inbox .formulaire {
+.formulaire {
     margin: 30px 0;
     padding: 10px;
     
 }
 
-.inbox .formulaire_bloc {
+ .formulaire_bloc {
  
     padding: 0 10px ;
     height: 7vh;

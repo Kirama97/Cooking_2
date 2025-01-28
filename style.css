@@ -6292,6 +6292,7 @@ overflow: hidden
     /* background-color: #1D483B; */
     justify-content: center;
     padding: 0;
+    display: none;
 
 }
 

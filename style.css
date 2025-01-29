@@ -2723,21 +2723,12 @@ color: var(--p-color);
 }
 
 
-.histoire_right .img {
-    position: relative;
+.histoire_right .img_chef {
+    background: var(--background);
+    border-radius: 5%;
 }
 
 
-.histoire_right .img::after {
-    content: '';
-    width: 100%;
-    height: 50px;
-    background-color: red;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    
-}
 
 
 /* responsive */

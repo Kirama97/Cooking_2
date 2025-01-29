@@ -33,7 +33,7 @@
 
 .carousel-control-prev-icon ,
 .carousel-control-next-icon {
-    background-color: var(--blue);
+    background-color: transparent;
 }
 
 
@@ -416,7 +416,7 @@ section {
 }
 
 button:hover {
-    background-color: var(--hover);
+   
     color: rgb(73, 61, 61);
     transition: 0.5s ease-out;
    
@@ -2675,6 +2675,7 @@ color: var(--p-color);
 .propos_histoire {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 200px;
    
 }
 
@@ -2716,10 +2717,9 @@ color: var(--p-color);
 
 }
 
-
-.histoire_right iframe {
+ iframe {
     width: 100%;
-    height: 40vh;
+    height: 70vh;
 }
 
 
@@ -2754,10 +2754,6 @@ color: var(--p-color);
     
 }
 
-.carousel-control-prev-icon ,
-.carousel-control-next-icon {
-    background-color: var(--blue);
-}
 
 
 
@@ -3406,10 +3402,7 @@ overflow: hidden
     
 }
 
-.carousel-control-prev-icon ,
-.carousel-control-next-icon {
-    background-color: var(--blue);
-}
+
 
 
 
@@ -4851,6 +4844,7 @@ overflow: hidden
   
     flex-direction: column-reverse;
     align-items: center;
+    margin-bottom: 80px;
    
 }
 
@@ -4890,9 +4884,9 @@ overflow: hidden
 }
 
 
-.histoire_right iframe {
+ iframe {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
 }
 
 
@@ -4942,7 +4936,7 @@ overflow: hidden
 
 .carousel-control-prev-icon ,
 .carousel-control-next-icon {
-    background-color: var(--blue);
+  
     display: none;
 }
 
@@ -6631,6 +6625,7 @@ overflow: hidden
   
     flex-direction: column-reverse;
     align-items: center;
+    margin-bottom: 40px;
    
 }
 
@@ -6674,7 +6669,7 @@ overflow: hidden
 
 .histoire_right iframe {
     width: 100%;
-    height: 30vh;
+    height: 25vh;
 }
 
 

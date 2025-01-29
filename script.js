@@ -28,4 +28,5 @@ bt_parametre.forEach((element , index) => {
      } 
 });
 
+new WOW().init();
 

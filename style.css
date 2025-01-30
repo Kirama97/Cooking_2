@@ -2469,7 +2469,7 @@ color: var(--p-color);
 
 }
 
-.bloc_article_item:nth-child(1) .bloc_article_left{
+/* .bloc_article_item:nth-child(1) .bloc_article_left{
     background: url(/Resources/image/image\ 47.png);
 }
 .bloc_article_item:nth-child(2) .bloc_article_left{
@@ -2486,7 +2486,7 @@ color: var(--p-color);
 }
 .bloc_article_item:nth-child(6) .bloc_article_left{
     background: url(/Resources/image/image\ 52.png);
-}
+} */
 
 .bloc_article_right {
     padding: 20px 0;

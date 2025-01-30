@@ -1637,21 +1637,41 @@ footer .licence {
     text-align: center;
     overflow: hidden;
     margin: 50px 0;
+  
+  
 
 }
 
+.guide_description {
+    text-align: center;
+    margin: 50px 0;
+    /* background-color: #0091ff; */
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
 
 
 .guide .guide_img {
     height: 70vh;
     width: 100%;
     border-radius: 30px;
-    background: url(/Resources/image/image\ 43.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background: url(/Resources/image/image\ 43.png); */
+    object-fit: cover;
+    
+    background-color: #0091ff;
+    overflow: hidden;
    
 }
+
+.guide .guide_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 
 
@@ -2487,6 +2507,12 @@ color: var(--p-color);
 .bloc_article_item:nth-child(6) .bloc_article_left{
     background: url(/Resources/image/image\ 52.png);
 } */
+
+
+.bloc_article_left img {
+    object-fit: cover;
+    
+}
 
 .bloc_article_right {
     padding: 20px 0;

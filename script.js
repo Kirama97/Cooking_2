@@ -1,67 +1,52 @@
-import {post_article} from "./template.js"
-import {data} from "./data.js"
-
-
+import { post_article } from "./template.js";
+import { data } from "./data.js";
 
 const burguer = document.querySelector(".burguer");
 const nav = document.querySelector("nav");
 
-burguer.onclick = function (){
-    nav.classList.toggle("active")
-    burguer.classList.toggle("active")
-    
-}
+burguer.addEventListener("click", () => {
+  nav.classList.toggle("active");
+  burguer.classList.toggle("active");
+});
 
+const bt_parametre = document.querySelectorAll(".bt_parametre");
+const bloc_parametre = document.querySelectorAll(".bloc_parametre");
 
+bt_parametre.forEach((element, index) => {
+  element.onclick = () => {
+    element.classList.toggle("toucher");
 
-const bt_parametre = document.querySelectorAll('.bt_parametre');
-const bloc_parametre = document.querySelectorAll('.bloc_parametre');
-
-
-bt_parametre.forEach((element , index) => {
-     element.onclick = ()=> {
-      
-         element.classList.toggle("toucher");
-
-         if (bloc_parametre[index]) {
-            bloc_parametre[index].classList.toggle("active");
-        }
-
-
-         
-     } 
+    if (bloc_parametre[index]) {
+      bloc_parametre[index].classList.toggle("active");
+    }
+  };
 });
 
 new WOW().init();
 
+// page bloc 
 
-// map donnée bloc  
+const bloc_article = document.querySelector(".bloc_article");
 
-// const ingredient_left = document.querySelector(".ingredient_left")
+let les_post = data;
 
-const bloc_article = document.querySelector('.bloc_article')
+localStorage.setItem("articles", JSON.stringify(data));
 
- let les_post = data ;
+const afficherPost = (articles) => {
+  articles.forEach((article) => {
+    console.log(article.nom);
 
+    const boite_article = document.createElement("div");
+    boite_article.classList.add("boite_article");
+    boite_article.setAttribute("data-id", article.id);
+    boite_article.innerHTML = post_article(article);
+    bloc_article.appendChild(boite_article);
 
- const afficherPost = (articles) => {
+    boite_article.addEventListener("click", () => {
+      window.location.href = `/pages/article.html?id=${article.id}`;
+    });
+  });
+};
 
-    articles.forEach((article) =>{
+afficherPost(les_post);
 
-         console.log(article.nom)
-
-
-        const boite_article = document.createElement("div");
-        boite_article.classList.add("boite_article")
-        boite_article.setAttribute("data-id" , articles.id);
-        boite_article.innerHTML = post_article(article);
-       bloc_article.appendChild(boite_article)
-
-
-    })
-
-
- }
-
-
-afficherPost(les_post) ; 

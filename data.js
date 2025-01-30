@@ -26,7 +26,7 @@ export const data = [
         nom : "Full Guide to Becoming a Professional Chef"  ,
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae incidunt magni reiciendis! Eaque." ,
         redacteur : "Babacar Ndoye" , 
-        image : "/Resources/image/image\ 49.png" ,
+        image : "/Resources/image/image\ 43.png" ,
         image_profil : "/Resources/image/profil.png",
         date : "15 Decembre 2024" 
     },
@@ -62,13 +62,14 @@ export const data = [
     
     },
     {
-        id : 7,
-        nom : "MOUSTAPHA" ,
+        // id : ,
+        nom : "ASSANE GUEYE" ,
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae incidunt magni reiciendis! Eaque." ,
-        redacteur :"Assane Gueye" , 
+        redacteur :"Assane Gueye"  , 
         image : "/Resources/image/image\ 52.png",
         image_profil : "/Resources/image/profil.png",
         date : "1 Novemvre 2024" 
     
     }
+
 ] 

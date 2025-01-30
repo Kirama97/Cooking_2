@@ -6,7 +6,7 @@ export const post_article = (article) => {
   return `
   
 
-      <a class="bloc_article_item  wow fadeInUp" data-wow-delay="0.3s" href="/pages/blog_self.html">
+      <a class="bloc_article_item  wow fadeInUp" data-wow-delay="0.3s" >
                         <div class="bloc_article_left">
                          <img src="${article.image}" alt="">
                         </div>

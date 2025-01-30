@@ -579,13 +579,7 @@ button:hover {
 
 }
 
-.recipe_content:hover > :not(:hover) {
 
-    opacity: 0.5;
-    filter: blur(2px);
-    transition: 0.5s ease;
-
-}
 
 .recipe_item:hover  {
     background:linear-gradient(to bottom ,rgb(255, 255, 255),rgba(201, 216, 223, 0.466));
@@ -1318,13 +1312,7 @@ button:hover {
 
 
 }
-.delicious_content .row:hover > :not(:hover) {
 
-    
-    opacity: 0.5;
-    filter: blur(2px);
-    transition: 0.5s ease;
-}
 
 
 .delicious_content .item:hover .coeur{
@@ -5842,7 +5830,7 @@ overflow: hidden
 
 
 .recipe_header_left h1 {
-    font-size:25px;
+    font-size:20px;
     text-align: center;
    
 }
@@ -5947,20 +5935,25 @@ overflow: hidden
 /* recipe _header middle */
 
 .section_recipe_header {
-    gap: 30px;
+    gap: 20px;
+    margin-bottom: 30px;
+ 
 }
 
 .recipe_header_middle {
   
-    height: 30vh;
+    height: 80vh;
+    flex-direction: column;
+    gap: 30px;
+    
 
 }
 
 
 .recipe_header_middle .header_middle_left {
  
-   
-    width: 50%;
+   height: 40vh;
+    width: 100%;
     border-radius: 20px;
    
    
@@ -5983,14 +5976,15 @@ overflow: hidden
 
 
 .recipe_header_middle .header_middle_right {
-    width: 48%;
+    width: 100%;
+    height: 45vh;
     border-radius: 20px;
     padding: 15px 12px;
 }
 
 
 .header_middle_right h1 {
-   font-size: 12px;
+   font-size: 14px;
    text-align: center;
   
    margin-bottom: 15px;
@@ -6049,6 +6043,7 @@ overflow: hidden
     /* background-color: #0091ff; */
     display: flex;
     justify-content: space-between;
+   
 }
 
 

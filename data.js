@@ -62,8 +62,18 @@ export const data = [
     
     },
     {
-        // id : ,
+        id : 7,
         nom : "ASSANE GUEYE" ,
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae incidunt magni reiciendis! Eaque." ,
+        redacteur :"Assane Gueye"  , 
+        image : "/Resources/image/image\ 52.png",
+        image_profil : "/Resources/image/profil.png",
+        date : "1 Novemvre 2024" 
+    
+    },
+    {
+        // id : 7,
+        nom : "test" ,
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae incidunt magni reiciendis! Eaque." ,
         redacteur :"Assane Gueye"  , 
         image : "/Resources/image/image\ 52.png",

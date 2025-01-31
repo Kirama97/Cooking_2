@@ -1395,6 +1395,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 }
 
 .inbox .inbox_texte {
@@ -1624,9 +1625,9 @@ footer .licence {
 }
 
 .guide_texte .guide_description {
-    margin: 50px 0;
+    /* margin: 50px 0; */
     width: 80%;
-    margin: auto;
+    /* margin: auto; */
     
 }
 .guide_texte .guide_description p {
@@ -1637,6 +1638,7 @@ footer .licence {
     text-align: center;
     overflow: hidden;
     margin: 50px 0;
+    font-size: 16px;
   
   
 
@@ -4079,17 +4081,17 @@ footer .licence {
    font-size: 14px;
 }
 
-.guide_texte .guide_description {
-    margin: 40px 0;
-    width: 85%;
-    margin: auto;
-    
-}
-.guide_texte .guide_description p {
-   
-    margin: 40px 0;
 
+
+
+
+#article-description{
+    font-size: 14px;
+    margin: 20px 0;
+    width: 90%;
+    margin:20px auto;
 }
+
 
 
 
@@ -5727,12 +5729,16 @@ footer .licence {
    font-size: 12px;
 }
 
-.guide_texte .guide_description {
+
+#article-description{
+    font-size: 12px;
     margin: 20px 0;
-    width: 85%;
-    margin: auto;
-    
+    width: 90%;
+    margin:20px auto;
 }
+
+
+
 .guide_texte .guide_description p {
    
     margin: 30px 0;
